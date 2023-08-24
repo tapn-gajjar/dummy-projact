@@ -1,0 +1,92 @@
+
+@import '../../Variables/Variables.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.c{
+    // height: 100vh;
+    position: relative;
+    .c-bg{
+        width: 20px;
+        // height:100vh;
+        height: 100%;
+        background-color:$green;
+        position: absolute;
+    }
+    .c-wrapper{
+        padding: 50px;
+        display: flex;
+        .c-left{
+            flex: 1;
+            .c-title{
+                font-size: 60px;
+                width: 80%;
+                @media screen and (max-width:600px){
+                    width: 100%;
+                }
+            }
+            .c-info-item{
+                display: flex;
+                align-items: center;
+                margin: 50px 0;
+                font-weight: 300;
+                width: 70%;
+                .c-icon{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .c-right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .c-desc{
+                
+
+            }
+            form{
+                margin-top: 20px;
+                input{
+                    width: 50%;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin: 10px 0;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    @media screen and (max-width:600px){
+                        width: 100%;
+                    }
+                }
+                textarea{
+                    width: 100% ;
+                    resize: none;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                }
+                button{
+                    margin-top: 5px;
+                    border: none;
+                    padding: 15px 40px;
+                    background-color: $green;
+                    color: white;
+                    font-weight: 500;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .c-wrapper{
+        flex-direction: column;
+       
+    }
+}

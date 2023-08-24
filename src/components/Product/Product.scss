@@ -1,0 +1,42 @@
+@import '../../Variables/Variables.scss';
+.p{
+    width: 30%;
+//    height: 40vh;
+   margin: 20px 10px;
+   border: 2px solid rgb(242,243,243);
+   border-radius: 10px 10px 0 0;
+   overflow: hidden;
+   .p-browser
+   {
+    height: 20px;
+    background-color:  rgb(242,243,243);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+    .p-circel{
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 3px;
+    }
+   }
+   a{
+    .p-img{
+        width: 100%;
+        transition: transform 1s;
+
+    }
+    .p-img:hover{
+        transform: scale(1.1);
+    }
+   }
+}
+@media screen and (max-width:600px){
+    .p{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+}
